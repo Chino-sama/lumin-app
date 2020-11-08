@@ -9,10 +9,17 @@ import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
 
 export default function Router () {
+	
 	return (
 		<NavigationContainer>
 			<Stack.Navigator>
-				<Stack.Screen name="Login" component={LoginScreen} />
+				<Stack.Screen 
+					name="Login" 
+					component={LoginScreen}
+					options={{
+						headerShown: false,
+					}}
+				/>
 				<Stack.Screen name="Dashboard" component={DashboardScreen} />
 			</Stack.Navigator>
 	    </NavigationContainer>
