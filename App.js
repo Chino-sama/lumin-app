@@ -31,7 +31,7 @@ export default function App() {
 	return fontsLoaded ? (
 		<View style={styles.container}>
 			<Router />
-			<StatusBar style="auto" />
+			<StatusBar barStyle='light-content' />
 		</View>
 	) : <AppLoading />;
 }
